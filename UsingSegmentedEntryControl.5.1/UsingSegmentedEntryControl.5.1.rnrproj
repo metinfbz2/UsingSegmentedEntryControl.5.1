@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <BuildTasksDirectory Condition=" '$(BuildTasksDirectory)' == ''">$(MSBuildProgramFiles32)\MSBuild\Microsoft\Dynamics\AX</BuildTasksDirectory>
+    <Model>PacktPub</Model>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <OutputPath>bin</OutputPath>
+    <SchemaVersion>2.0</SchemaVersion>
+    <GenerateCrossReferences>True</GenerateCrossReferences>
+    <RunAppCheckerRules>False</RunAppCheckerRules>
+    <LogAppcheckerDiagsAsErrors>False</LogAppcheckerDiagsAsErrors>
+    <ProjectGuid>{4156d5c9-75a9-47de-9ea4-2aeeb7b562d8}</ProjectGuid>
+    <Name>UsingSegmentedEntryControl.5.1</Name>
+    <RootNamespace>UsingSegmentedEntryControl.5.1</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Configuration>Debug</Configuration>
+    <DBSyncInBuild>True</DBSyncInBuild>
+    <GenerateFormAdaptors>False</GenerateFormAdaptors>
+    <Company>
+    </Company>
+    <Partition>initial</Partition>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DataEntityExpandParentChildRelations>False</DataEntityExpandParentChildRelations>
+    <DataEntityUseLabelTextAsFieldName>False</DataEntityUseLabelTextAsFieldName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Classes\" />
+    <Folder Include="EDT Extensions\" />
+    <Folder Include="EDT Integer64s\" />
+    <Folder Include="Form Extensions\" />
+    <Folder Include="Table Extensions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AxEdtExtension\DimensionDynamicAccount.PacktPub">
+      <SubType>Content</SubType>
+      <Name>DimensionDynamicAccount.PacktPub</Name>
+      <Link>EDT Extensions\DimensionDynamicAccount.PacktPub</Link>
+    </Content>
+    <Content Include="AxEdt\DimensionDynamicAccount2">
+      <SubType>Content</SubType>
+      <Name>DimensionDynamicAccount2</Name>
+      <Link>EDT Integer64s\DimensionDynamicAccount2</Link>
+    </Content>
+    <Content Include="AxFormExtension\LedgerParameters.PacktPub">
+      <SubType>Content</SubType>
+      <Name>LedgerParameters.PacktPub</Name>
+      <Link>Form Extensions\LedgerParameters.PacktPub</Link>
+    </Content>
+    <Content Include="AxTableExtension\DimensionAttributeValueCombination.PacktPub">
+      <SubType>Content</SubType>
+      <Name>DimensionAttributeValueCombination.PacktPub</Name>
+      <Link>Table Extensions\DimensionAttributeValueCombination.PacktPub</Link>
+    </Content>
+    <Content Include="AxTableExtension\LedgerParameters.PacktPub">
+      <SubType>Content</SubType>
+      <Name>LedgerParameters.PacktPub</Name>
+      <Link>Table Extensions\LedgerParameters.PacktPub</Link>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(BuildTasksDirectory)\Microsoft.Dynamics.Framework.Tools.BuildTasks.targets" />
+</Project>

@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34301.259
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FC65038C-1B2F-41E1-A629-BED71D161FFF}") = "UsingSegmentedEntryControl.5.1 (USR) [PacktPub]", "UsingSegmentedEntryControl.5.1\UsingSegmentedEntryControl.5.1.rnrproj", "{4156D5C9-75A9-47DE-9EA4-2AEEB7B562D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4156D5C9-75A9-47DE-9EA4-2AEEB7B562D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4156D5C9-75A9-47DE-9EA4-2AEEB7B562D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {32D09A3B-96C7-4D5F-A742-6C367F8481F5}
+	EndGlobalSection
+EndGlobal
